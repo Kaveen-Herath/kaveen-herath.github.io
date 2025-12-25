@@ -10,7 +10,7 @@ html,
 body {
   width: 100%;
   overflow-x: hidden;
-  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0, 0, 0, 0.76)),url("/assets/images/background1.webp");
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0, 0, 0, 0.76)),url("assets/images/background1.webp");
   background-repeat: no-repeat;
   background-size: 110% 110%;   /* bigger than screen so it has room to move */
   background-position: 50% 50%;
