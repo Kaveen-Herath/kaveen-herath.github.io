@@ -657,28 +657,12 @@
   <h2>Feedback</h2>
   <p>I'd love to hear your thoughts!</p>
   <form action="https://formsubmit.co/kherath2006@gmail.com" method="POST">
+    <input type="hidden" name="_next" value="https://kaveen-herath.github.io/kaveen-portfolio/">
     <input type="text" name="name" placeholder="Your Name" required>
     <input type="email" name="email" placeholder="Email" required>
     <textarea name="message" placeholder="Your feedback" required></textarea>
     <button type="submit">Send Feedback</button>
   </form>
-
-  <div id="thankYouMessage" style="display:none;">Thanks for your feedback!</div>
-
-<script>
-const form = document.getElementById('feedbackForm');
-const thanks = document.getElementById('thankYouMessage');
-
-form.addEventListener('submit', async (e) => {
-  e.preventDefault();
-  const data = new FormData(form);
-  const res = await fetch(form.action, { method: form.method, body: data });
-  if (res.ok) {
-    thanks.style.display = 'block';
-    form.reset();
-  }
-});
-</script>
 </section>
 
 
